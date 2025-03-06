@@ -1,4 +1,4 @@
-How Your Stock Adviser Works to Monitor and Suggest Actions
+*********How Your Stock Adviser Works to Monitor and Suggest Actions
 Your automated portfolio adviser is designed to continuously monitor both your portfolio and the overall stock market and suggest strategic actions when necessary. Here’s how it works:
 
 1️⃣ Daily, Weekly, and Monthly Price Monitoring
