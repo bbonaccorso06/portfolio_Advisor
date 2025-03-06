@@ -1,63 +1,128 @@
-*********How Your Stock Adviser Works to Monitor and Suggest Actions
-Your automated portfolio adviser is designed to continuously monitor both your portfolio and the overall stock market and suggest strategic actions when necessary. Here’s how it works:
+📈 AI-Powered Portfolio Tracker
 
-1️⃣ Daily, Weekly, and Monthly Price Monitoring
-📌 How it Works:
+🚀 Overview
 
-It fetches stock prices from multiple sources (Yahoo Finance, Alpha Vantage, Finnhub).
-It tracks daily, weekly, monthly, and 3-month price movements.
-It calculates the percentage change in each stock to determine if an action is needed.
-📌 How This Helps You: ✅ Avoid reacting to short-term price fluctuations
-✅ Identify long-term uptrends and downtrends
-✅ Prevent unnecessary buying/selling caused by daily market noise
+The AI-Powered Portfolio Tracker is an advanced stock monitoring tool that uses real-time data, market news, AI-driven sentiment analysis, and macroeconomic indicators to intelligently recommend buy, sell, or rebalance actions for your investment portfolio. It continuously evaluates your stock positions, tracks sector performance, and delivers actionable insights via email alerts.
 
-2️⃣ Market Sentiment & News Analysis
-📌 How it Works:
+🎯 Features
 
-It pulls financial news from Finnhub & NewsAPI.
-It filters news related to your stocks.
-It uses AI-driven sentiment analysis to determine if the market is bullish, neutral, or bearish.
-📌 How This Helps You: ✅ Helps you stay informed on market conditions
-✅ Identifies external risks (e.g., inflation, regulations, earnings reports)
-✅ Avoids bad trades based on hype or panic selling
+✅ Stock Price & Trend Monitoring
 
-3️⃣ Smart Rebalancing Recommendations
-📌 How it Works:
+Fetches real-time stock prices using Yahoo Finance, Alpha Vantage, and Finnhub.
 
-It tracks your entire portfolio and checks if certain stocks are moving significantly.
-It compares short-term vs. long-term trends to make smarter buy/sell decisions.
-It uses the following thresholds:
-Weekly change > 5% → Monitor closely 🚨
-Monthly change > 10% → Consider adjusting 🔄
-3-month change > 15% → Strong rebalance signal 🔥
-📌 How This Helps You: ✅ Keeps your portfolio diversified and aligned with your goals
-✅ Helps capture profits at the right time instead of holding too long
-✅ Suggests adding to undervalued positions for long-term gains
+Tracks daily, weekly, monthly, and 3-month price changes.
 
-4️⃣ When Will It Suggest Buying, Selling, or Sector Rotation?
-Your AI-based stock adviser will only suggest actions when market conditions align.
+Identifies short-term vs. long-term trends to avoid emotional trading.
 
-🔵 ✅ It will suggest selling if:
+📊 Market Sentiment & News Analysis
 
-A stock has grown significantly over months (e.g., +20% in 3 months)
-Market sentiment shows potential risks ahead
-Other stocks/sectors offer better long-term opportunities
-🟡 🔄 It will suggest rebalancing if:
+Fetches news from multiple sources (Finnhub, NewsAPI, etc.).
 
-A stock is declining over multiple weeks/months
-Your portfolio is too concentrated in one sector
-Other sectors are showing strength
-🟢 💰 It will suggest buying if:
+Uses AI-driven sentiment analysis to classify market trends as Bullish, Neutral, or Bearish.
 
-A stock has dropped but fundamentals remain strong
-Market sentiment indicates recovery or growth potential
-A sector is emerging as a strong long-term opportunity
-5️⃣ Fully Automated Decision-Making
-📌 How it Works:
+Filters news relevant to your portfolio holdings.
 
-Runs every hour (time.sleep(3600)) and can be modified for daily or weekly checks.
-Sends you an email report with clear recommendations on what to do next.
-Avoids spamming you with unnecessary alerts unless something meaningful has changed.
-📌 How This Helps You: ✅ You don’t need to check your portfolio daily
-✅ You’ll always know when to act—without guessing
-✅ It eliminates emotional trading & market noise distractions
+🌍 Macroeconomic Data Tracking
+
+Monitors inflation (CPI), interest rates, and GDP growth.
+
+Uses economic conditions to adjust portfolio strategies.
+
+🔄 Sector Rotation & Performance Analysis
+
+Tracks Tech, Healthcare, Financials, Energy, and Consumer Discretionary.
+
+Detects capital flows across industries to suggest potential sector shifts.
+
+📧 Automated Email Alerts
+
+Sends portfolio health reports to your email.
+
+Provides clear rebalancing suggestions based on price movements and market conditions.
+
+🛠️ Installation & Setup
+
+1️⃣ Clone the Repository
+
+$ git clone https://github.com/your-repo/portfolio-tracker.git
+$ cd portfolio-tracker
+
+2️⃣ Install Dependencies
+
+$ pip install -r requirements.txt
+
+3️⃣ Set Up API Keys
+
+Create an .env file and add the following keys:
+
+SENDGRID_API_KEY=your-sendgrid-key
+ALPHA_VANTAGE_API_KEY=your-alpha-vantage-key
+FINNHUB_API_KEY=your-finnhub-key
+NEWSAPI_KEY=your-newsapi-key
+
+4️⃣ Run the Tracker
+
+$ python tracker.py
+
+📊 How the AI Works
+
+1️⃣ Portfolio Monitoring
+
+Watches daily, weekly, monthly, and 3-month price trends.
+
+Threshold-based triggers:
+
+Weekly change > 5% → Monitor 🚨
+
+Monthly change > 10% → Consider rebalancing 🔄
+
+3-month change > 15% → Strong action required 🔥
+
+2️⃣ Market & Economic Research
+
+Fetches real-time financial news & social sentiment.
+
+Uses TextBlob AI to detect bullish vs. bearish sentiment.
+
+Tracks macroeconomic factors (inflation, interest rates, GDP).
+
+3️⃣ Intelligent Buy/Sell Recommendations
+
+🔵 BUY: If a stock is undervalued, has strong fundamentals, and improving sentiment.
+🟡 HOLD: If market conditions support stability.
+🔴 SELL: If a stock is overbought, declining in strength, or sector rotation is required.
+
+📩 Example Email Report
+
+📊 Portfolio Health Report:
+Total Portfolio Value: $10,520.45
+Total Invested: $10,000.00
+Overall Portfolio Return: +5.2%
+
+🚨 Stock Alerts:
+- AAPL has increased 12% in the past month.
+- TSLA dropped 8%—consider monitoring closely.
+
+🔄 Suggested Actions:
+- Consider rebalancing TSLA due to recent losses.
+- Hold AAPL as it is performing well.
+
+📊 Market Sentiment: Bullish - Positive trends observed.
+📊 Economic Indicators: Inflation 3.2%, GDP Growth 2.5%
+📊 Sector Performance: Tech +8.4%, Energy -2.1%
+
+🤖 Future Enhancements
+
+Integration with Trading APIs (Alpaca, Robinhood, TD Ameritrade).
+
+More AI-driven technical analysis (RSI, Moving Averages, Bollinger Bands).
+
+Customizable alerts based on user-defined rules.
+
+🏆 Contributions & Support
+
+Want to contribute? Feel free to submit a pull request or open an issue.
+
+📧 Contact: your-email@example.com
+
+🚀 Happy Investing!
