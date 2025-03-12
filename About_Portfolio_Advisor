@@ -1,0 +1,29 @@
+AI-Powered Portfolio Manager is an all-in-one system that:
+
+Tracks Your Portfolio in Real-Time
+
+Pulls live prices and fundamental indicators for each stock or ETF in your portfolio.
+Automatically calculates your total value, invested capital, and overall return.
+Analyzes Market Sentiment, Technicals, and Macroeconomic Data
+
+Gathers headlines from various sources, runs them through a sentiment-analysis pipeline, and produces an “overall market sentiment” gauge.
+Computes technical indicators like RSI, MACD, SMA, and EMA for each ticker, and distills them into bullish, neutral, or bearish signals.
+Aims for an 8% Monthly Return
+
+Monitors your actual monthly performance against an 8% target. If you’re behind, it becomes more aggressive in recommending buys; if you’re ahead, it becomes more defensive.
+Reinforces decision thresholds with performance-based logic so it can “catch up” if you’re lagging behind your monthly goal.
+Generates Easy-to-Read Recommendations
+
+Condenses its analysis into a neat recommendations table:
+Which tickers to BUY (or expand your position in),
+Which to HOLD (no action),
+Which to SELL fully (and optionally re-position the freed capital into a more promising stock).
+Rounds out a “step-by-step” Action Plan so you know exactly how to rebalance—no outside cash required.
+Delivers Clean Email Reports
+
+Automatically emails you with:
+Real-time portfolio metrics,
+Market summary,
+Clearly labeled buy/sell signals,
+A “Diagnostics” section that includes monthly performance vs. target, market sentiment gauge, and a bullet-point plan telling you exactly what trades to make.
+Core Benefit: You get an autonomous, AI-driven investment adviser that seamlessly merges technical analysis, market news sentiment, and performance-targeted logic. It’s not just telling you broad signals—it’s providing a complete rebalancing roadmap that ensures your money is used efficiently within your own portfolio, targeting 8% monthly gains (or whatever threshold you choose).
